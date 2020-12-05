@@ -5,4 +5,4 @@ Các mô hình đều có các lớp encoder giúp trích xuất đặc trưng c
 
 Mô hình dự đoán 3 ảnh đang không thực hiện được việc chập 3 ảnh predict theo chiều ngang để so sánh với 3 ảnh output đã chập theo chiều ngang.
 
-File 001 là một thư mục mẫu trong các thư mục con dùng để train model
+Thư mục 001 là một thư mục mẫu chứa 5 ảnh input (cat_[0-4].png) và 3 ảnh output (cat_[5-7].png) dùng để train/test model
