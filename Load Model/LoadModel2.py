@@ -6,6 +6,9 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 
+#Nhap i voi gia tri tu 0 den 505 de chon thu muc
+i = 2
+
 val_dir = '/home/thinhluong/Desktop/Project_1/test/0001'
 
 # Function for measuring how similar two images are
@@ -21,8 +24,6 @@ def perceptual_distance(y_true, y_pred):
 
 # load model
 model = load_model('ConvLSTM2DModelAtari', custom_objects={"perceptual_distance": perceptual_distance})
-
-i = 2
 
 cat_dirs = glob.glob(val_dir + "/*")
 input_images = np.zeros(

@@ -6,6 +6,9 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Nhap i voi gia tri tu 0 den 1491 de chon thu muc
+i = 2 
+
 val_dir = '/home/thinhluong/Desktop/VideoPredict/catz/test'
 
 # Function for measuring how similar two images are
@@ -26,10 +29,10 @@ cat_dirs = glob.glob(val_dir + "/*")
 input_images = np.zeros(
             (1, 96, 96, 3 * 5))
 output_images = np.zeros((1, 96, 96, 3))
-input_imgs = glob.glob(cat_dirs[2] + "/cat_[0-4]*")
+input_imgs = glob.glob(cat_dirs[i] + "/cat_[0-4]*")
 imgs = [np.array(Image.open(img)) for img in sorted(input_imgs)]
 input_images[0] = np.concatenate(imgs, axis=2)
-output_img = glob.glob(cat_dirs[2] + "/cat_result.jpg")
+output_img = glob.glob(cat_dirs[i] + "/cat_result.jpg")
 output_images[0] = np.array(Image.open(output_img[0]))
 input_images[0] /= 255.
 output_images[0] /= 255.
