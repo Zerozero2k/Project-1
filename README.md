@@ -12,6 +12,9 @@ Thư mục 001 là một thư mục mẫu chứa 5 ảnh input (cat_[0-4].png) v
 # Hướng dẫn sử dụng sử dụng code Load Model
 
 Tải thư mục Load Model
+
 Tải thư mục dữ liệu ở link này: https://drive.google.com/file/d/1sf4XKbJW9EEdocWnIEqv4gSvLUdEbJHm/view?usp=sharing
+
 Thiết lập đường dẫn tới các thư mục dữ liệu bằng cách thay đổi đường dẫn trong biến val_dir
+
 Thay đổi biến i để chọn thư mục muốn sử dụng để dự đoán ảnh
